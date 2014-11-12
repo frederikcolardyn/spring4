@@ -75,7 +75,7 @@ public class Config {
         jpaProperties.setProperty("hibernate.dialect", "org.hibernate.dialect.HSQLDialect");
         jpaProperties.setProperty("hibernate.show_sql", "false");
         jpaProperties.setProperty("hibernate.format_sql", "false");
-        jpaProperties.setProperty("hibernate.hbm2ddl.auto", "update");
+        // jpaProperties.setProperty("hibernate.hbm2ddl.auto", "update");
         entityManagerFactoryBean.setJpaProperties(jpaProperties);
         entityManagerFactoryBean.afterPropertiesSet();
         return entityManagerFactoryBean.getNativeEntityManagerFactory();
