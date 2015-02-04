@@ -4,10 +4,8 @@ import be.telenet.spring4.model.ApiResponse;
 import be.telenet.spring4.model.User;
 import be.telenet.spring4.service.UptimeService;
 import be.telenet.spring4.service.UserService;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;

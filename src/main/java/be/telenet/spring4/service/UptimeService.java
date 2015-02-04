@@ -28,7 +28,6 @@ public class UptimeService {
     }
 
     public ApiResponse uptime() {
-        log.info("Cache empty, create api response.");
         return new ApiResponse("ok", "Up since " + this.startDate);
     }
 
