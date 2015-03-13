@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<session status="OK"
+         domain="internet"
+         lifetime="900"
+         ssosid="91bc048517312b4493d21e7849352fd18662a18e07fc65e4ab115e9707eaba4b"
+         appref="026e08cd9d40b91d93ad3544ba7a664c6c65ec5b78bc7f5e72449f77a7946331/2c214b657aac4634ddc10186c751b4483a84326a9e18186360ac4882ce2c0494">
+    <attr name="sso.domain">internet</attr>
+    <attr name="sso.login">v647402</attr>
+    <attr name="sso.env">cegeka_dev</attr>
+    <attr name="sso.appid">mijntelenet_cms</attr>
+    <attr name="LastName">Nuytkens</attr>
+    <attr name="RolesAndReferences">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Roles&gt;&lt;Role id=&quot;1&quot; name=&quot;Customer_Admin&quot;&gt;&lt;EntityReference id=&quot;1&quot; domain=&quot;OASIS&quot; entity=&quot;Customer&quot;    name=&quot;Customer_Number&quot; value=&quot;984326189&quot;/&gt;&lt;/Role&gt;&lt;/Roles&gt;</attr>
+    <attr name="sso.identity">1935844</attr>
+	<attr name="FirstName">Birger</attr>
+	<attr name="sso.language">nl</attr>
+	<attr name="sso.login">v647402</attr>
+	<attr name="sso.uid">v647402</attr>
+    <attr name="PreferredEmailAddress">v647402@telenet.be</attr>
+</session>

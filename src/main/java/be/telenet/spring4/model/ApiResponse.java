@@ -1,9 +1,14 @@
 package be.telenet.spring4.model;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+
+import java.io.Serializable;
+
 /**
  * Created by frederik on 10/11/14.
  */
-public class ApiResponse {
+@JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
+public class ApiResponse implements Serializable{
     protected String code;
     protected String message;
 
