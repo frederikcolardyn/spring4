@@ -19,6 +19,7 @@ import java.io.IOException;
 public class SsoController {
 
     private String mijntelenet = "http://localhost:8080/mijntelenet/";
+//    private String mijntelenet = "http://10.0.2.2:8080/mijntelenet/";
 
     @RequestMapping("/checkSession.do")
     public void checkSession(@RequestParam(value = "goto", required = false) String goTo, HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -38,6 +39,7 @@ public class SsoController {
     @ResponseBody
     @RequestMapping("/lookupSession.do")
     public String lookupSession(HttpServletRequest request) {
+        System.out.println("lookup");
         try {
             String response = IOUtils.toString(new File("src/test/resources/lookupSession.xml").toURI(), "UTF-8");
             return response;
