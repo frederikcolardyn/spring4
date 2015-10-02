@@ -7,12 +7,12 @@
     <attr name="sso.domain">internet</attr>
     <attr name="sso.env">cegeka_dev</attr>
     <attr name="sso.appid">mijntelenet_cms</attr>
-    <attr name="LastName">Nuytkens</attr>
-    <attr name="RolesAndReferences">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Roles&gt;&lt;Role id=&quot;1&quot; name=&quot;Customer_Admin&quot;&gt;&lt;EntityReference id=&quot;1&quot; domain=&quot;OASIS&quot; entity=&quot;Customer&quot;    name=&quot;Customer_Number&quot; value=&quot;807474274&quot;/&gt;&lt;/Role&gt;&lt;/Roles&gt;</attr>
+    <attr name="LastName">Mr</attr>
+    <attr name="RolesAndReferences">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Roles&gt;&lt;Role id=&quot;1&quot; name=&quot;Customer_Admin&quot;&gt;&lt;EntityReference id=&quot;1&quot; domain=&quot;OASIS&quot; entity=&quot;Customer&quot;    name=&quot;Customer_Number&quot; value=&quot;14348522&quot;/&gt;&lt;/Role&gt;&lt;/Roles&gt;</attr>
     <attr name="sso.identity">1935844</attr>
-	<attr name="FirstName">Birger</attr>
+	<attr name="FirstName">Dummy</attr>
 	<attr name="sso.language">nl</attr>
-	<attr name="sso.login">kristof.trenson.joyce.dhooge</attr>
-	<attr name="sso.uid">kristof.trenson.joyce.dhooge</attr>
-    <attr name="PreferredEmailAddress">kristof.trenson.joyce.dhooge@telenet.be</attr>
+	<attr name="sso.login">v647402</attr>
+	<attr name="sso.uid">v647402</attr>
+    <attr name="PreferredEmailAddress">mocklogin@telenet.be</attr>
 </session>

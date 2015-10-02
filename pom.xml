@@ -73,22 +73,6 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-orm</artifactId>
 		</dependency>
-		<!-- database -->
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-core</artifactId>
-			<version>4.3.7.Final</version>
-		</dependency>
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-entitymanager</artifactId>
-			<version>4.3.7.Final</version>
-		</dependency>
-		<dependency>
-			<groupId>org.hsqldb</groupId>
-			<artifactId>hsqldb</artifactId>
-			<version>2.3.2</version>
-		</dependency>
 
 		<!-- utility -->
 		<dependency>

@@ -19,7 +19,6 @@ import java.io.IOException;
 public class SsoController {
 
     private String mijntelenet = "http://localhost:8080/mijntelenet/";
-//    private String mijntelenet = "http://10.0.2.2:8080/mijntelenet/";
 
     @RequestMapping("/checkSession.do")
     public void checkSession(@RequestParam(value = "goto", required = false) String goTo, HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -34,6 +33,17 @@ public class SsoController {
             response.sendRedirect(mijntelenet + "session/sso.do?valid=true&event=check&nonce=nonce&goto=" + mijntelenet);
         }
 
+    }
+
+    @RequestMapping("/updateSession.do")
+    public void updateSession(@RequestParam(value = "goto", required = false) String goTo, HttpServletRequest request, HttpServletResponse response) throws IOException {
+        System.out.println("goTo: " + goTo + " req " + request.getRequestURI() + " ? " + request.getQueryString());
+        response.sendRedirect(mijntelenet + "session/sso.do?valid=true&event=check&nonce=nonce&goto=" + mijntelenet);
+    }
+
+    @RequestMapping({"/logon.do", "signon.do"})
+    public void updateSession(HttpServletResponse response) throws IOException {
+        response.sendRedirect(mijntelenet + "session/sso.do?valid=true&event=check&nonce=nonce&goto=" + mijntelenet);
     }
 
     @ResponseBody
@@ -51,11 +61,13 @@ public class SsoController {
 
     @RequestMapping("/signoff.do")
     public void signoff(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        for (Cookie cookie : request.getCookies()) {
-            cookie.setValue("");
-            cookie.setMaxAge(0);
-            cookie.setPath("/");
-            response.addCookie(cookie);
+        if (request.getCookies() != null){
+            for (Cookie cookie : request.getCookies()) {
+                cookie.setValue("");
+                cookie.setMaxAge(0);
+                cookie.setPath("/");
+                response.addCookie(cookie);
+            }
         }
         response.sendRedirect(mijntelenet +"session/sso.do?valid=true&event=check&nonce=nonce&goto="+mijntelenet);
     }
