@@ -19,7 +19,7 @@ public class EngAuthenticationServiceController {
 //    private String mijntelenet = "http://10.0.2.2:8080/mijntelenet/";
 
     public static void main (String[] args){
-        System.out.println("{\"access_token\":\"c224b532-a0e5-4b80-9ebf-a97388f784c0\",\"token_type\":\"bearer\",\"refresh_token\":\"9e0e22a0-8c03-4499-aad0-96c5206d8fa2\",\"expires_in\":259199,\"scope\":\"tvott\",\"is_telenet_login\":true,\"customer_number\":\"12095694\",\"username\":\"yelo.kijken\",\"is_sub_login\":false,\"client_id\":\"sports_web\"}");
+        System.out.println("{\"access_token\":\"c224b532-a0e5-4b80-9ebf-a97388f784c0\",\"token_type\":\"bearer\",\"refresh_token\":\"9e0e22a0-8c03-4499-aad0-96c5206d8fa2\",\"expires_in\":259199,\"scope\":\"tvott\",\"is_telenet_login\":true,\"customer_number\":null,\"username\":\"yelo.kijken\",\"is_sub_login\":false,\"client_id\":\"sports_web\"}");
     }
 
     @RequestMapping("/authentication")

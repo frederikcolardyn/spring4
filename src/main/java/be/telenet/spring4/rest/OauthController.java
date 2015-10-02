@@ -32,17 +32,17 @@ public class OauthController {
     }
 
     @ResponseBody
-    @RequestMapping("/token/validateToken")
+    @RequestMapping("/rest/token/validateToken")
     public String lookupSession(HttpServletRequest request) {
         System.out.println("token oauth2 req " + request.getRequestURI() + " ? " + request.getQueryString());
-        return "\"{VALID}\"";
+        return "VALID";
     }
 
     @ResponseBody
-    @RequestMapping("/token/validate/{customer}")
+    @RequestMapping("/rest/token/validate/{customer}")
     public String lookupSessionCustomer(HttpServletRequest request, @PathVariable String customer) {
         System.out.println("token validation " + customer);
-        return "\"VALID\"";
+        return "VALID";
     }
 
 }
